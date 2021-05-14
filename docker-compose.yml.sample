@@ -6,7 +6,7 @@ services:
       - "CRONTIMETABLE=*/15 * * * *"
       - "VDIRSYNCER_CONFIG=/config/config.ini"
     hostname: vdirsyncer
-    image: raetha/vdirsyncer-docker
+    image: raetha/vdirsyncer
     network_mode: bridge
     volumes:
       - "vdirsyncer:/config"
